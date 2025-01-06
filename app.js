@@ -32,7 +32,7 @@ function random_in_range(min, max)
     return Math.floor(Math.random() * (max - min) + min)
 }
 
-c.drawImage(img, (canvas.width - img.width)/2, (canvas.height - img.height)/2 + 100, 455, 669)
+c.drawImage(img, (canvas.width - img.width)/2, (canvas.height - img.height)/2 + 100)
 
 class Particle
 {
