@@ -7,7 +7,7 @@ canvas.width = innerWidth
 canvas.height = innerHeight
 const c = canvas.getContext("2d")
 
-const gap = 5
+const gap = 4
 var mouse = {
     x: undefined,
     y: undefined,
@@ -32,7 +32,7 @@ function random_in_range(min, max)
     return Math.floor(Math.random() * (max - min) + min)
 }
 
-c.drawImage(img, (canvas.width - img.width)/2, (canvas.height - img.height)/2 + 100)
+c.drawImage(img, (canvas.width - img.width)/2, (canvas.height - img.height)/2)
 
 class Particle
 {
@@ -54,7 +54,7 @@ class Particle
         this.force = 0
         this.friction = 0.98
         this.angle = 0
-        this.ease = 0.1
+        this.ease = 0.03
     }
 
     draw()
